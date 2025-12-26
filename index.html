@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+
+<h1>Hotel Management System</h1>
+
+
+<h2>Room Booking Form</h2>
+
+<form onsubmit="addBooking(); return false;">
+
+    <label>Room Number:</label><br>
+    <input type="text" id="roomNumber" required><br><br>
+
+    <label>Customer Name:</label><br>
+    <input type="text" id="customerName" required><br><br>
+
+    <label>Number of Days:</label><br>
+    <input type="text" id="stayDays" required><br><br>
+
+    <input type="submit" value="Book Room">
+</form>
+
+<h2>Booking Details</h2>
+
+<table>
+    <tr>
+       
+        <th>Room No</th>
+         <th>customerName</th>
+        <th>Days Stayed</th>
+        <th>Total Rent (₹)</th>
+    </tr>
+    <tbody id="bookingTable"></tbody>
+</table>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
